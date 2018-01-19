@@ -1,0 +1,287 @@
+body {
+    font: 15px/1.5 'Allerta Stencil', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+
+
+/*Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button_1 {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .15s ease;
+}
+
+.button_1:hover{
+    transition: .5s ease;
+    filter: brightness(130%);
+}
+
+
+/* Header **/
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header .branding {
+    float: left;
+}
+
+header .branding h1 {
+    font-family:'Allerta Stencil', sans-serif;
+    letter-spacing: -1px;
+    font-size: 24px;
+    margin: 0;
+    animation: animatie 5s infinite;
+}
+
+@keyframes animatie {
+    0%{
+        filter: blur(5px);
+    }
+    25%{
+        filter: blur(0px);
+    }
+    75%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(5px);
+    }
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+}
+
+
+/*Showcase*/
+
+.showcase {
+    min-height: 400px;
+    background: url('../img/showcase.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #EDC561;
+}
+
+.showcase h1 {
+    margin-top: 125px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 0em 0em .3em rgba(0, 0, 0, 1);
+}
+
+.showcase p {
+    font-size: 20px;
+    text-shadow: 0em 0em .15em rgba(0, 0, 0, 1);
+    color: #eaeaea;
+}
+
+
+/*Newsletter*/
+
+.newsletter {
+    font-family:'Allerta Stencil', sans-serif;
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;    border-bottom: #e8491d 3px solid;
+    box-shadow: 0em .5em 1em rgba(0,0,0,.3);
+}
+
+.newsletter h1 {
+    float: left;
+}
+
+.newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+.newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+
+/*Boxes*/
+
+.boxes {
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.boxes .box {
+    float: left;
+    text-align: center;
+    width: 15%;
+    min-height: 100px;
+    padding: 10px;
+    transition: .15s ease;
+}
+
+.boxes .box:hover {
+    filter: brightness(120%);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.boxes .box:nth-child(2) {
+    width: 60%;
+}
+
+.boxes .box img {
+    height: 100px;
+    width: auto;
+}
+
+.boxes .over {
+    margin: auto;
+    text-align: center;
+    min-height: 100px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .boxes .box,
+    .boxes .box:nth-child(2) {
+        width: 100%;
+    }
+}
+
+/* Sidebar */
+aside.sidebar{
+    min-height: 400px;
+    background: url('../img/player.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    float: right;
+    width:45%;
+    padding-top: 10px;
+}
+
+/* Main-col */
+article.main-col{
+    min-height: 400px;
+    background: url('../img/map.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    float:left;
+    width:45%;
+    padding-top: 10px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    article.main-col, aside.sidebar {
+        width: 90%; 
+    padding: 40px;}
+    article p, aside p {
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .over img {
+        width: 100%;
+    }
+    article.main-col, aside.sidebar {
+        width: 90%; 
+    padding: 40px;}
+    article p, aside p {
+        padding-top: 30px;
+    }
+}
+
+/*Lista*/
+
+#select-buttons {
+    background: #f7f7f7;
+    margin: 50px auto;
+    padding: 20px 50px;
+}
+
+#select-buttons hr {
+    margin 20px;
+}
+
+#select-buttons h2 {
+    text-align: center;
+}
+
+#select-buttons hr {
+    width: 90%;
+    margin: auto;
+}
+
+#select-buttons select {
+    display: block;
+}
+
+#select-buttons button {
+    padding: 10px 30px;
+    background: #fbffaa;
+    margin: 20px auto;
+    border: 1px solid #555;
+    cursor: pointer;
+}

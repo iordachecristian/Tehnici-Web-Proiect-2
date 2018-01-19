@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Battle Royale">
+        <meta name="keywords" content="PUBG, playerunknown">
+        <meta name="author" content="Iordache Cristian">
+        <title>PlayerUnknown's Battlegrounds | Overview</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="branding">
+                    <h1><span class="highlight">PLAYERUNKNOWN'S BATTLEGROUNDS </span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li ><a href="index.html">Home</a></li>
+                        <li class="current"><a href="overview.html">Overview</a></li>
+                        <li><a href="https://pubg.gamepedia.com/PLAYERUNKNOWNS_BATTLEGROUNDS_Wiki">WIKI</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        
+        <section class="newsletter">
+            <div class="container">
+                <h1>Subscribe to our Newsletter</h1>
+                <form>
+                    <input type="email" placeholder="Enter Email...">
+                    <button type="submit" class="button_1">Subscribe</button>
+                </form>    
+            </div>     
+        </section>
+        
+        <section class="boxes">
+            <div class="container">
+                <div class="over">
+                    <img src="./img/logo_overview.png">
+                </div>
+               
+            </div>
+
+        </section>
+
+        <section class="main">
+            <div class="container">
+                <article class="main-col">
+                    <h1 class="page-title">Overview</h1>
+                    <p>THIS IS BATTLE ROYALE</p>
+                    <p>Our BATTLE ROYALE game-mode will put up to 100 players on a remote island for a winner-takes-allshowdown where strategic gameplay is as important as shooting skills. </p>
+                    <p>Players will enter a last-man-standing battle where they try to locate weapons, vehicles and supplies in a graphically and tactically rich battleground that eventually forces players into a shrinking play zone as they engage in a tense and spectacular fight to the death.</p>
+                </article>
+
+                <aside class="sidebar">
+                    <h3>Who is PlayerUnknown?</h3>
+                    <p>PLAYERUNKNOWN (Brendan Greene - Creative Director at Bluehole) is the pioneer of the Battle Royale genre. </p>
+                    <p>From humble beginnings creating the Battle Royale game-mode on the ARMA series, he went on to license his game-mode to Sony Online Entertainment (now Daybreak Games) for inclusion in their title H1Z1.</p>
+                    <p>Now working as creative director on BATTLEGROUNDS, 
+                        he has finally the chance to create his own version of the game-mode which spawned a new genre in gaming.</p>
+                </aside>
+            </div>
+        </section>
+        <section id="select-buttons">
+                <h2 class="lista">Choose Your Weapon</h2>
+                <hr />
+                Choose Weapon Type:
+                <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+                    <option value=""></option>
+                    <option value="SniperRifle">Sniper Rifle</option>
+                    <option value="AssaultRifle">Assault Rifle</option>
+                    <option value="SMG">Submachine Gun</option>
+                    <option value="Shotgun">Shotgun</option>
+                    <option value="Pistol">Pistol</option>
+                    <option value="Grenade">Grenade</option>
+                </select>
+                Choose Weapon Model:
+                <select id="slct2" name="slct2"></select>
+                <button id="buton" onclick="incarca();">Incarca</button>
+        </section>
+        <footer>
+            <p>PUBG WEB DESIGN, Copyright &copy; 2017</p>
+        </footer>
+        <script type="text/javascript" src="javascript/script.js"></script>
+    </body>
+</html>
